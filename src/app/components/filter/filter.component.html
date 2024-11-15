@@ -1,0 +1,42 @@
+<div class="px-6 sm:px-10 max-w-[1050px] mx-auto my-5 text-[#737380]">
+  <div class="flex gap-4">
+    <button
+      *ngFor="let item of categorys"
+      [appFilterItem]="item.value"
+      [curFilter$]="curFilter$"
+      (click)="changeCurCat(item.value)"
+      class="text-[12px] md:text-[16px]"
+    >
+      {{ item.name }}
+      <span
+        *ngIf="item.value === (curFilter$ | async)"
+        class="block h-[4px] w-full bg-[#FFA585]"
+      ></span>
+    </button>
+  </div>
+</div>
+
+<div class="flex items-center justify-center mb-6">
+  <div class="flex items-center gap-2 bg-white rounded-lg border py-1 px-3">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22px"
+      height="22px"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    <input
+      placeholder="Filtrar por título"
+      class="mx-auto"
+      (input)="onSearch($event)"
+    />
+  </div>
+</div>

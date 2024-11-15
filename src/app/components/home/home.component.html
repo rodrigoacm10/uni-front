@@ -1,0 +1,31 @@
+<app-filter></app-filter>
+
+<div
+  class="grid px-6 sm:px-10 pb-10 max-w-[1050px] mx-auto gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
+>
+  <button
+    class="mx-auto w-[160px] sm:w-[180px]"
+    *ngFor="let obj of filteredData"
+    (click)="goToProduct(obj.id)"
+  >
+    <div
+      class="text-[#41414D] bg-white rounded-md overflow-hidden border flex flex-col items-center p-4"
+    >
+      <div class="w-full h-[160px] sm:h-[180px] overflow-hidden">
+        <img class="w-full" [src]="obj.image" alt="{{ obj.title }}" />
+      </div>
+      <div class="h-[0.5px] w-[150%] bg-[#DCE2E5] my-2"></div>
+
+      <p
+        class="w-full truncate pt-1 text-left"
+        [innerHTML]="obj.title | styledText"
+      >
+        {{ obj.title.trim() }}
+      </p>
+
+      <div class="h-[1px] w-full bg-[#DCE2E5] my-1"></div>
+
+      <p class="w-full text-left font-bold">{{ obj.price | currencyBRL }}</p>
+    </div>
+  </button>
+</div>
