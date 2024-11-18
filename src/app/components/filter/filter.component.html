@@ -1,6 +1,7 @@
 <div class="px-6 sm:px-10 max-w-[1050px] mx-auto my-5 text-[#737380]">
   <div class="flex gap-4">
     <button
+      appHoverLift
       *ngFor="let item of categorys"
       [appFilterItem]="item.value"
       [curFilter$]="curFilter$"

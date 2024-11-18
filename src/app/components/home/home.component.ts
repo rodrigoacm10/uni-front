@@ -7,6 +7,7 @@ import { FiltersService } from '../../services/filters.service';
 import { BehaviorSubject, combineLatest } from 'rxjs';
 import { CurrencyBRLPipe } from '../../pipes/currency-format.pipe';
 import { StyledTextPipe } from '../../pipes/styled-text.pipe';
+import { HoverLiftDirective } from '../../directives/hover-lift.directive';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ import { StyledTextPipe } from '../../pipes/styled-text.pipe';
     FilterComponent,
     CurrencyBRLPipe,
     StyledTextPipe,
+    HoverLiftDirective,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],

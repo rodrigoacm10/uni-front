@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LocalStorageService } from './services/local-storage.service';
+import { HoverLiftDirective } from './directives/hover-lift.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule], // Remova LocalStorageService daqui
+  imports: [RouterOutlet, CommonModule, HoverLiftDirective], // Remova LocalStorageService daqui
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })

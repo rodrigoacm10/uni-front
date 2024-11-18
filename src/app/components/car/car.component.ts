@@ -5,6 +5,7 @@ import { CommonModule, CurrencyPipe } from '@angular/common';
 import { CurrencyBRLPipe } from '../../pipes/currency-format.pipe';
 import { HoverGapDirective } from '../../directives/hover-gap.directive';
 import { StyledTextPipe } from '../../pipes/styled-text.pipe';
+import { HoverLiftDirective } from '../../directives/hover-lift.directive';
 
 @Component({
   selector: 'app-car',
@@ -15,10 +16,11 @@ import { StyledTextPipe } from '../../pipes/styled-text.pipe';
     CurrencyBRLPipe,
     HoverGapDirective,
     StyledTextPipe,
+    HoverLiftDirective, // Agora deve funcionar corretamente
   ],
   templateUrl: './car.component.html',
   styleUrls: ['./car.component.css'],
-  providers: [CurrencyPipe], // Adicione esta linha para fornecer o CurrencyPipe
+  providers: [CurrencyPipe],
 })
 export class CarComponent {
   constructor(

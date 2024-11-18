@@ -4,11 +4,12 @@ import { DataApiService } from '../../services/data-api.service';
 import { LocalStorageService } from '../../services/local-storage.service';
 import { CommonModule } from '@angular/common';
 import { HoverGapDirective } from '../../directives/hover-gap.directive';
+import { HoverLiftDirective } from '../../directives/hover-lift.directive';
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [CommonModule, HoverGapDirective],
+  imports: [CommonModule, HoverGapDirective, HoverLiftDirective],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css',
 })

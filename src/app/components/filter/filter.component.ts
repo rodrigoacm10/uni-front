@@ -3,11 +3,12 @@ import { FiltersService } from '../../services/filters.service';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { FilterItemDirective } from '../../directives/filter-item.directive';
+import { HoverLiftDirective } from '../../directives/hover-lift.directive';
 
 @Component({
   selector: 'app-filter',
   standalone: true,
-  imports: [CommonModule, FilterItemDirective],
+  imports: [CommonModule, FilterItemDirective, HoverLiftDirective],
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.css'],
 })

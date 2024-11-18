@@ -7,6 +7,7 @@
     class="mx-auto w-[160px] sm:w-[180px]"
     *ngFor="let obj of filteredData"
     (click)="goToProduct(obj.id)"
+    appHoverLift
   >
     <div
       class="text-[#41414D] bg-white rounded-md overflow-hidden border flex flex-col items-center p-4"
