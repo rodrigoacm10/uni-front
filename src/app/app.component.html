@@ -113,5 +113,7 @@
     </div>
   </div>
 
-  <router-outlet />
+  <div [@fadeInOut]="route.snapshot.data" style="display: contents">
+    <router-outlet></router-outlet>
+  </div>
 </main>

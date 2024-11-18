@@ -36,7 +36,6 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // Combina os dados do serviço, o valor do filtro e o termo de busca
     combineLatest([
       this.service.getDataApi(),
       this.filter.getCurCat(),
