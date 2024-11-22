@@ -43,24 +43,6 @@
 
       <div class="flex items-center gap-4">
         <button appHoverLift (click)="goToCart()" class="relative">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="27px"
-            height="27px"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M12 7V12L14.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-
-        <button appHoverLift (click)="goToCart()" class="relative">
           <div
             *ngIf="itemCount"
             class="bottom-0 absolute font-bold h-[27px] w-[27px] text-[14px] rounded-full bg-red-700 flex items-center justify-center"
