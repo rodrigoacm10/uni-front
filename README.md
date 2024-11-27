@@ -12,7 +12,7 @@ O projeto está disponível em: [https://uni-front-uxlo.vercel.app/](https://uni
 - Eliel Lucas Trajano Neto - 01606048
 - José Gabriel Rocha Barreto - 01597807
 - Matheus Henrique da Costa Nascimento - 01601141
-- Pedro Antônio Silva Pedroso - 10605602
+- Pedro Antônio Silva Pedroso - 01605602
 - Rafael Aragão Vieira - 01592062
 
 ---
