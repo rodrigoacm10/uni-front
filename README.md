@@ -14,6 +14,7 @@ O projeto está disponível em: [https://uni-front-uxlo.vercel.app/](https://uni
 - Matheus Henrique da Costa Nascimento - 01601141
 - Pedro Antônio Silva Pedroso - 01605602
 - Rafael Aragão Vieira - 01592062
+- André Marcilio da Silva Ferreira - 01616701
 
 ---
 
